@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="div1" style="display: flex; flex-direction: column; ">
+        <div style="display: flex; padding: 10px; justify-content: space-evenly;">
+            <div><i  class="ri-stack-fill" ></i></div>
+            <div>
+                <div><h1>FinTrack Pro</h1></div>
+                <div>Enterprise Finance</div>
+            </div>
+        </div>
+        <div id="id2" >
+            <div><button><i class="ri-dashboard-line">  DashBoard </i></button></div>  
+            <div><button>  <i class="ri-settings-line">       settings</i></button></div>  
+            </div>
+        <div id="id3"><button id="addbtn">+ Add Transacxtion</button></div>
+    </div>
+    <div class="div2"> 
+        <div class="navbar">
+            <div><button id="logoutBtn"><i class="ri-logout-box-r-line"></i> LogOut</button></div>
+            <div>Admin</div>
+        </div>
+        <div style="margin-top: 10%;">
+            <h1>Financial Overview</h1>
+            <h3>Real Time Tracking System</h3>
+            <div class="overview" >
+                <div class="overitem">
+                    <h1><i class="ri-bank-fill"></i></h1>
+                    <h3>Current Balance</h3>
+                    <h1 id="balance">$0</h1>
+                </div>
+                <div class="overitem">
+                    <h1><i class="ri-line-chart-fill"></i></h1>
+                    <h3>Total Income</h3>
+                    <h1 id="income">$0</h1>
+                </div>
+                <div class="overitem">
+                   <h1>
+                    <i class="ri-arrow-right-down-box-fill"></i>
+                </h1>
+                    <h3>Total Expense</h3>
+                    <h1 id="expense">$0</h1>
+                </div>
+                <div class="overitem">
+                    <h1><i class="ri-wallet-line"></i></h1>
+                    <h3>Total Transacxtion</h3>
+                    <h1 id="transactionCount">$0</h1>
+                </div>
+                
+            </div>
+           <section class="transaction">
+            <h1>Transaction</h1>
+            <ul id="transactionList"></ul>
+           </section>
+        </div>
+    </div>
+    <div class="div3">
+        
+    </div>
+    <div class="div4">
+        <h2>Prefrences</h2>
+        <div class="toggle-container">
+        <span class="text">Dark Mode</span>
+
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+        
+    </div>
+    <div>
+        <h6>_______________________________________</h6>
+    </div>
+    <button id="resetBtn"> <i class="ri-delete-bin-line"></i> Reset All Data</button>
+    </div>
+    
+    <div id="popup" class="popup hidden" style="height: 300px; width: 300px;">
+
+    <h2>Add Transaction</h2>
+
+    <input style="height: 40px;"
+        type="text"
+        id="title"
+        placeholder="Title"
+    >
+
+    <input style="height: 40px;"
+        type="number"
+        id="amount"
+        placeholder="Amount"
+    >
+
+    <select id="type" style="width:170px;">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select>
+     <div class="buttons" style="gap: 40px;">
+            <button style="width: 60px;" id="saveBtn">Save</button>
+            <button id="closeBtn">Cancel</button>
+        </div>
+
+
+  
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

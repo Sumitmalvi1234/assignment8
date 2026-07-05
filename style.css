@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background-color: #F5F7FB;
+}
+.div1{
+    height: 100%;
+    width: 20%;
+    background-color: aliceblue;
+    border: 2px solid rgb(177, 177, 188);
+    border-radius: 12px;
+}
+.ri-stack-fill {
+    font-size: 40px;
+}
+#id2{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10%;
+    margin-bottom: 100%;
+    
+}
+#id2 div button{
+    height: 60px;
+    width: 250px;
+    color: rgb(0, 0, 0);
+    background-color: #DBEAFE;
+    font-size: 20px;
+    text-transform:capitalize;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-weight: 900;
+
+}
+#id3{
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    margin-top: 40%;
+    flex-direction: column;
+}
+#id3 button{
+    height: 60px;
+    width: 250px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.div2{
+    height: 100%;
+    width: 65%;
+    background-color: #F5F7FB;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 20px;
+}
+.div2 h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.div2 h3{
+    font-weight: 100;
+    
+}
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    font-size: 25px;
+    align-items: center;
+}
+.navbar div button{
+    width: 100px;
+    height: 40px;
+    background-color: #F5F7FB;
+    font-size: 15px;
+    font-weight: 800;
+    border: 1px solid rgb(212, 204, 204);
+    border-radius: 5px;
+}
+.overview{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+.overitem{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    height: 250px;
+    width: 200px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 25px;
+}
+.transaction{
+    width: 100%;
+    margin-top: 5%;
+    
+    justify-content: center;
+   
+    
+}
+/*.div3{
+    height: 100%;
+    width: 0%;
+    background-color: aliceblue;
+    border: 2px solid rgb(177, 177, 188);
+    border-radius: 12px;
+}--*/
+
+
+.div4{
+    height: 100%;
+    width: 15%;
+    background-color: aliceblue;
+    border: 2px solid rgb(177, 177, 188);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 40px;
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+
+.toggle-container{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.text{
+    font-size:28px;
+    font-weight:500;
+}
+
+/* Hide checkbox */
+.switch input{
+    display:none;
+}
+
+/* Switch */
+.switch{
+    position:relative;
+    display:inline-block;
+    width:60px;
+    height:32px;
+}
+
+.slider{
+    position:absolute;
+    inset:0;
+    background:#d1d5db;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.slider::before{
+    content:"";
+    position:absolute;
+    width:26px;
+    height:26px;
+    left:3px;
+    top:3px;
+    background:white;
+    border-radius:50%;
+    transition:.3s;
+}
+
+/* ON state */
+.switch input:checked + .slider{
+    background:#4CAF50;
+}
+
+.switch input:checked + .slider::before{
+    transform:translateX(28px);
+}
+
+.div4 button{
+    background-color: #FEE2E2;
+    border: 1px solid rgb(232, 144, 144);
+    height: 45px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 900;
+    color: red;
+}
+.overview{
+    display:flex;
+}
+.popup{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content{
+
+    width:350px;
+    background:white;
+    border-radius:15px;
+    padding:25px;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.popup-content input,
+.popup-content select{
+
+    height:45px;
+    padding:10px;
+    font-size:16px;
+
+}
+
+.buttons{
+
+    display:flex;
+    justify-content:space-between;
+
+}
+
+.buttons button{
+
+    width:45%;
+    height:45px;
+    cursor:pointer;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+#transactionList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#transactionList li {
+    margin-bottom: 15px;
+}
+
+.transaction-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 6px solid gray;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+
+.transaction-card.income {
+    border-left-color: green;
+}
+
+.transaction-card.expense {
+    border-left-color: red;
+}
+
+.transaction-card button {
+    margin-top: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.transaction-card button:hover {
+    background: darkred;
+}
+
+/*for dark theme*/
+.dark{
+    background-color:#121212;
+    color:white;
+}
+
+.dark .div1,
+.dark .div2,
+.dark .div4{
+    background:#1f1f1f;
+    color:white;
+}
+
+.dark .overitem{
+    background:#2b2b2b;
+    color:white;
+}
+
+.dark .transaction-card{
+    background:#2b2b2b;
+    color:white;
+}
+
+.dark .popup-content{
+    background:#2b2b2b;
+    color:white;
+}
+
+.dark input,
+.dark select{
+    background:#444;
+    color:white;
+    border:1px solid #666;
+}
+#popup
+{
+    background-color: #f9eaea;
+    flex-direction: column;
+    margin-top: 500px;
+    margin-left: 70px;
+    row-gap: 10px;
+    color: #808080;
+
+}
+/* Login Page */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#F5F7FB,#F5F7FB);
+}
+
+.login-container{
+    width:350px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.login-container h1{
+    color:#4f46e5;
+    margin-bottom:25px;
+    font-size:30px;
+}
+
+.login-container input{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+    transition:0.3s;
+}
+
+.login-container input:focus{
+    border-color:#4f46e5;
+    box-shadow:0 0 8px rgba(79,70,229,0.3);
+}
+
+.login-container button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:#4f46e5;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-container button:hover{
+    background:#3730a3;
+}
+/* Register Page */
+
+.register-container{
+    width:350px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    text-align:center;
+    margin:80px auto;
+}
+
+.register-container h1{
+    color:#4f46e5;
+    margin-bottom:10px;
+}
+
+.register-container h2{
+    margin-bottom:20px;
+    color:#444;
+}
+
+.register-container input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+}
+
+.register-container input:focus{
+    border-color:#4f46e5;
+}
+
+.register-container button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:#4f46e5;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.register-container button:hover{
+    background:#3730a3;
+}
+
+.register-container p{
+    margin-top:15px;
+}
+
+.register-container a{
+    color:#4f46e5;
+    text-decoration:none;
+    font-weight:bold;
+}

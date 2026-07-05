@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack Pro - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+
+    <h1>FinTrack Pro</h1>
+    <h2>Login</h2>
+
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <button id="loginBtn">Login</button>
+
+    <p style="margin-top:20px;">
+        Don't have an account?
+        <a href="register.html">Register Here</a>
+    </p>
+
+</div>
+
+<script>
+
+// If already logged in, go directly to app
+if (localStorage.getItem("isLoggedIn") === "true") {
+    window.location.href = "app.html";
+}
+
+const loginBtn = document.getElementById("loginBtn");
+
+loginBtn.addEventListener("click", function () {
+
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+
+    if (email === "" || password === "") {
+        alert("Please enter email and password.");
+        return;
+    }
+
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+    const user = users.find(function(u) {
+        return u.email === email && u.password === password;
+    });
+
+    if (user) {
+
+        localStorage.setItem("isLoggedIn", "true");
+        localStorage.setItem("currentUser", JSON.stringify(user));
+
+        alert("Login Successful!");
+
+        window.location.href = "app.html";
+
+    } else {
+
+        alert("Invalid Email or Password.");
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
